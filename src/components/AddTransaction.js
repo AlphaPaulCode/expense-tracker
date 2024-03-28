@@ -20,7 +20,7 @@ const AddTransaction = () => {
             (negative - expense, positive - income)
             </label>
 
-            <input type='number'  placeholder='Enter amount' />
+            <input type='number' value={amount} onChange={(e) => setAmount(e.target.value)} placeholder='Enter amount' />
 
         </div>
           <button className='btn'>Add Transaction</button>
