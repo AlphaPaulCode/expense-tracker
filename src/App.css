@@ -1,0 +1,105 @@
+/* App.css */
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    margin-bottom: 20px;
+  }
+  
+  .form-control label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-control input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  .inc-exp-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .inc-exp-container div {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .inc-exp-container .plus {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .inc-exp-container .minus {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .money {
+    font-size: 1.2rem;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .list li:last-child {
+    border-bottom: none;
+  }
+  
+  .list li .delete-btn {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .list li .delete-btn:hover {
+    background-color: #d32f2f;
+  }
+  

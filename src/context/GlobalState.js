@@ -3,10 +3,6 @@ import AppReducer from './AppReducer';
 import { type } from "@testing-library/user-event/dist/type";
 const initialState = {
     transactions: [
-        {id: 1, text:'flower', amount: -20},
-        {id: 2, text:'flower', amount: 300},
-        {id: 3, text:'flower', amount: -10},
-        {id: 4, text:'flower', amount: -150}
     ]
 }
 
@@ -25,9 +21,17 @@ export const GlobalContext = createContext(initialState);
           payload: id
         })
       }
+
+      function addTransaction(transaction){
+        dispatch({
+          type: 'ADD_TRANSACTION',
+          payload: transaction
+        })
+      }
       return( <GlobalContext.Provider value={{
         transactions: state.transactions,
-        deleteTransaction
+        deleteTransaction,
+        addTransaction
       }}>
         {children}
         </GlobalContext.Provider>
